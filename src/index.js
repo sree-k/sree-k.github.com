@@ -7,4 +7,5 @@ import App from './App.js';
 import 'bootstrap/dist/css/bootstrap.css';
 import'./styles/style.css';
 
-ReactDOM.render(<BrowserRouter><App /></BrowserRouter>, document.getElementById('root'));
+// ReactDOM.render(<BrowserRouter><App /></BrowserRouter>, document.getElementById('root'));
+ReactDOM.render(<Router basename={process.env.PUBLIC_URL}>< App /></Router>, document.getElementById(‘root’));	
